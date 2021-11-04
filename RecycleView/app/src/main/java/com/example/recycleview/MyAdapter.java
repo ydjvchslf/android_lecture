@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 //새로운 class 생성, RecyclerView.Adapert<> 상속하는
@@ -56,7 +57,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.myImage.setImageResource(imgs[position]);
 
         // + 추가
-        holder.linearLayout.setOnClickListener(new View.OnClickListener() {
+        holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // SecondActivity에 넣어줄 내용을 intent에 저장해줄거야
@@ -87,7 +88,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         ImageView myImage;
 
         //Layout에 추가한 id를 이곳에 추가
-        LinearLayout linearLayout;
+        ConstraintLayout mainLayout;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -97,7 +98,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             myText1 = itemView.findViewById(R.id.myText1);
             myText2 = itemView.findViewById(R.id.myText2);
             myImage = itemView.findViewById(R.id.myImageView);
-            linearLayout = itemView.findViewById(R.id.linearLayout); // + 추가
+            mainLayout = itemView.findViewById(R.id.mainLayout); // + 추가
         }
     }
 }
