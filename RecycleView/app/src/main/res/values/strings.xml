@@ -1,30 +1,3 @@
 <resources>
-    <string name="app_name">RecycleView</string>
-    <!-- 가져다 쓸 string 들 여기에 정리 -->
-    <string-array name="programming_languages">
-        <item>C++</item>
-        <item>C#</item>
-        <item>Java</item>
-        <item>JavaScript</item>
-        <item>Kotlin</item>
-        <item>Python</item>
-        <item>Ruby</item>
-        <item>Swift</item>
-        <item>TypeScript</item>
-        <item>VisualStudio</item>
-    </string-array>
-
-    <string-array name="description">
-        <item>This is a random description!</item>
-        <item>This is a random description!</item>
-        <item>This is a random description!</item>
-        <item>This is a random description!</item>
-        <item>This is a random description!</item>
-        <item>This is a random description!</item>
-        <item>This is a random description!</item>
-        <item>This is a random description!</item>
-        <item>This is a random description!</item>
-        <item>This is a random description!</item>
-    </string-array>
-
+    <string name="app_name">Sliding</string>
 </resources>

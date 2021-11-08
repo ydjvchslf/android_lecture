@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
-    <!-- RecyclerView id 지정해줌 -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="열기" />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/teal_700">
+
+        <!-- visibility 속성을 주기 전에는 반|반 이었는데
+            속성 줌으로써 잠깐 보이지 않음!
+            버튼 눌러서 슉 나오기 할거야! -->
+        <LinearLayout
+            android:id="@+id/targetPage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#FCF086"
+            android:minWidth="200dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
